@@ -114,7 +114,7 @@ for i, (lab_, vals) in enumerate(rows):
 peak = max(-c for c in closing)
 res = [("Peak funding requirement", f(peak), f"month {[-c for c in closing].index(peak)+1}"),
        ("Total overdraft interest", f(sum(intr)), "sum of monthly interest"),
-       ("Closing cash after retention release", f(closing[-1]), "= 6,000,000 - 5,100,000 cost - 120,000 TDS - interest")]
+       ("Closing cash after retention release", f(closing[-1]), f"Check: 6,000,000 contract - 5,100,000 cost - 120,000 TDS - {sum(intr):,} interest = {closing[-1]:,.0f}")]
 for i, (a, b, c_) in enumerate(res):
     t.cell(row=16 + i, column=1, value=a).font = Font(bold=True); t.cell(row=16 + i, column=2, value=b); t.cell(row=16 + i, column=4, value=c_)
 t.column_dimensions["A"].width = 34
