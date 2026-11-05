@@ -57,7 +57,7 @@ rows = [
     ("Costs", "Cost = value of work x cost ratio, split into labour, materials, plant and overheads. Each category is paid after its own credit period (months)."),
     ("Interest", "Overdraft interest = opening negative balance x annual rate / 12, rounded to the rupee, charged monthly and added to the balance (so it compounds monthly). Positive balances earn nothing."),
     ("Not modelled", "GST and input-tax-credit timing, interest on mobilisation advance, price escalation, bank processing fees, daily interest, disputed or rejected bill items."),
-    ("Source code", "An independent Python engine and Streamlit app with the same method are in the python folder. Used for cross-checking."),
+    ("Source code", "An independent Python engine and Streamlit app with the same method are in 1_Tool/source_code (also on GitHub: Samarpit-bhatia/ce725-cashflow-forecaster). Used for cross-checking."),
     ("Accountability", "Planning tool only. It does not replace contract review, lender approval or certified accounts."),
 ]
 header(g, 4, ["Item", "Detail"])
@@ -435,7 +435,7 @@ for c, w in zip("ABCDE", [70, 16, 10, 16, 16]): CK.column_dimensions[c].width = 
 # ------------------------------------------------------------------ Validation
 V = wb.create_sheet("Validation")
 title(V, "Validation - tool (Calc_Base) vs independent hand-calculated benchmark",
-      "Benchmark values are TYPED from 03_Validation/Manual_Benchmark_Hand_Calculation.xlsx (no links to the tool). Base inputs only.")
+      "Benchmark values are TYPED from 3_Validation/Manual_Benchmark_Hand_Calculation.xlsx (no links to the tool). Base inputs only.")
 sys.path.insert(0, os.path.dirname(__file__))
 BENCH = {}
 bench_path = os.path.join(os.path.dirname(__file__), "benchmark_values.py")
