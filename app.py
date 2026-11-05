@@ -1,5 +1,5 @@
 """
-Streamlit app - Contractor Cash Flow and Working Capital Forecaster (CE725 Team 1, Topic 3)
+Streamlit app - Contractor Cash Flow and Working Capital Forecaster (CE725 Team 36, Topic 3)
 Same method as the Excel tool, using cashflow_engine.py.
 Run locally:   streamlit run app.py
 Live version: https://ce725-cashflow-forecaster.streamlit.app
@@ -14,7 +14,7 @@ import cashflow_engine as E
 
 st.set_page_config(page_title="Contractor Cash Flow Forecaster", layout="wide")
 st.title("Contractor Cash Flow and Working Capital Forecaster")
-st.caption("CE725 Team 1 · Topic 3 · Converts a project schedule and payment terms into monthly cash flows, "
+st.caption("CE725 Team 36 · Topic 3 · Converts a project schedule and payment terms into monthly cash flows, "
            "S-curves, peak funding requirement and overdraft interest. Inputs are used only for this session and are not saved. Use sample or anonymised figures on the hosted version.")
 
 base = E.Inputs()

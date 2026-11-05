@@ -39,7 +39,7 @@ def title(ws, text, sub=None):
 # ------------------------------------------------------------------ Guide
 g = wb.active; g.title = "Guide"
 title(g, "Contractor Cash Flow and Working Capital Forecaster (v2)",
-      "CE725 Construction Economics and Finance - Team 1 - Topic 3")
+      "CE725 Construction Economics and Finance - Team 36 - Topic 3")
 rows = [
     ("Purpose", "Converts a project schedule and contract payment terms into monthly cash flows, S-curves, cash-in vs cash-out curves, the peak funding requirement and the overdraft interest cost."),
     ("Sample case", "INR 60 lakh, six-month G+1 site-office and staff-accommodation building, Pune (Base case)."),

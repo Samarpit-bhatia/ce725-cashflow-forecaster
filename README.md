@@ -1,4 +1,4 @@
-# Contractor Cash Flow Forecaster – Streamlit app (CE725 Team 1, Topic 3)
+# Contractor Cash Flow Forecaster – Streamlit app (CE725 Team 36, Topic 3)
 
 The same method as the Excel tool (`../Team1_Cash_Flow_Forecaster_v2.xlsx`), as an interactive web app.
 
