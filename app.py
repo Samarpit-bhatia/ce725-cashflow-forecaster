@@ -2,7 +2,9 @@
 Streamlit app - Contractor Cash Flow and Working Capital Forecaster (CE725 Team 1, Topic 3)
 Same method as the Excel tool, using cashflow_engine.py.
 Run locally:   streamlit run app.py
-Privacy: runs on your own computer; no project data is sent anywhere.
+Live version: https://ce725-cashflow-forecaster.streamlit.app
+Privacy: run locally, nothing leaves your computer. The hosted version processes inputs on
+Streamlit Community Cloud for the session only; nothing is saved. Use sample or anonymised figures there.
 """
 from dataclasses import replace
 import pandas as pd
@@ -13,7 +15,7 @@ import cashflow_engine as E
 st.set_page_config(page_title="Contractor Cash Flow Forecaster", layout="wide")
 st.title("Contractor Cash Flow and Working Capital Forecaster")
 st.caption("CE725 Team 1 · Topic 3 · Converts a project schedule and payment terms into monthly cash flows, "
-           "S-curves, peak funding requirement and overdraft interest. Runs locally — no data leaves this computer.")
+           "S-curves, peak funding requirement and overdraft interest. Inputs are used only for this session and are not saved. Use sample or anonymised figures on the hosted version.")
 
 base = E.Inputs()
 presets = E.scenarios()

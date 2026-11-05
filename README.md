@@ -1,7 +1,11 @@
 # Contractor Cash Flow Forecaster – Streamlit app (CE725 Team 1, Topic 3)
 
-The same method as the Excel tool (`../Team1_Cash_Flow_Forecaster_v2.xlsx`), as an interactive web app that runs on your own computer.
-No data leaves your machine.
+The same method as the Excel tool (`../Team1_Cash_Flow_Forecaster_v2.xlsx`), as an interactive web app.
+
+**Live app (no installation): https://ce725-cashflow-forecaster.streamlit.app**
+If it shows a "This app has gone to sleep" screen, click the wake-up button and wait about 30 seconds.
+
+Run locally (below) to keep all data on your own computer. The hosted version processes inputs on Streamlit Community Cloud for the session only and saves nothing.
 
 ## Run it (about 2 minutes)
 Requires **Python 3.10 or later** (`python3 --version`).
